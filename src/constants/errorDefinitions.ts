@@ -1,5 +1,9 @@
-export const errorDefinitions = [
-  { name: "ValidationError", code: 400, data: {} },
+const errorDefinitions = [
+  {
+    name: "ValidationError",
+    code: 400,
+    data: {},
+  },
   { name: "UnauthorizedError", code: 401, data: {} },
   { name: "NotFoundError", code: 404, data: {} },
   { name: "ServerError", code: 500, data: {} },
@@ -13,3 +17,7 @@ export const errorDefinitions = [
   { name: "ServiceUnavailableError", code: 503, data: {} },
   { name: "GatewayTimeoutError", code: 504, data: {} },
 ];
+
+module.exports = {
+  errorDefinitions,
+};
